@@ -12,6 +12,10 @@
 		41D325F82837032C00597C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D325F62837032C00597C30 /* Main.storyboard */; };
 		41D325FA2837032D00597C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D325F92837032D00597C30 /* Assets.xcassets */; };
 		41D325FD2837032D00597C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D325FB2837032D00597C30 /* LaunchScreen.storyboard */; };
+		9D18F7EC2837F76100FADFF8 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F7EB2837F76100FADFF8 /* ToDo.swift */; };
+		9D18F7EF2837F97300FADFF8 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F7EE2837F97300FADFF8 /* ToDoController.swift */; };
+		9D18F7F22837FDF700FADFF8 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F7F12837FDF700FADFF8 /* HomeTableViewController.swift */; };
+		9D18F7F52837FEA700FADFF8 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F7F42837FEA700FADFF8 /* ToDoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		41D325F92837032D00597C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D325FC2837032D00597C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D325FE2837032D00597C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D18F7EB2837F76100FADFF8 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		9D18F7EE2837F97300FADFF8 /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
+		9D18F7F12837FDF700FADFF8 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		9D18F7F42837FEA700FADFF8 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		41D325EF2837032C00597C30 /* HoneyDo */ = {
 			isa = PBXGroup;
 			children = (
+				9D18F7ED2837F94800FADFF8 /* Model Controller */,
+				9D18F7EA2837F74B00FADFF8 /* Model */,
 				41D326042837033C00597C30 /* Resources */,
 				41D326052837054500597C30 /* Storyboards */,
 			);
@@ -78,6 +88,40 @@
 				41D325FB2837032D00597C30 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9D18F7EA2837F74B00FADFF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D18F7EB2837F76100FADFF8 /* ToDo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D18F7ED2837F94800FADFF8 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D18F7EE2837F97300FADFF8 /* ToDoController.swift */,
+				9D18F7F02837FDC200FADFF8 /* ViewController */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		9D18F7F02837FDC200FADFF8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D18F7F12837FDF700FADFF8 /* HomeTableViewController.swift */,
+				9D18F7F32837FE8B00FADFF8 /* SubViews */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D18F7F32837FE8B00FADFF8 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				9D18F7F42837FEA700FADFF8 /* ToDoTableViewCell.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D18F7EC2837F76100FADFF8 /* ToDo.swift in Sources */,
 				41D325F12837032C00597C30 /* AppDelegate.swift in Sources */,
 				41D325F32837032C00597C30 /* SceneDelegate.swift in Sources */,
+				9D18F7F52837FEA700FADFF8 /* ToDoTableViewCell.swift in Sources */,
+				9D18F7EF2837F97300FADFF8 /* ToDoController.swift in Sources */,
+				9D18F7F22837FDF700FADFF8 /* HomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +355,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +384,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
